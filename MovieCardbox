@@ -9,7 +9,7 @@ header.post-header, article.post .post-header{display:none}
     max-width: 728px;
     font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
     margin: -45px -20px 10px -20px;
-}/*#DIV_1*/
+}
 
 #back-cover:after {
     bottom: 0px;
@@ -74,6 +74,7 @@ header.post-header, article.post .post-header{display:none}
     content: '';
     height: 100%;
     left: 100%;
+    top: 0;
     position: absolute;
     right: -225px;
     z-index: 1;
