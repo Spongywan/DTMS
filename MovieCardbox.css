@@ -261,9 +261,6 @@ width: 144px;
 font: normal normal normal normal 14px / 44px Oswald, Arial, sans-serif;
 padding: 0px 10px;}
 
-.imdbRatingPlugin, .imdbRatingPlugin span.ofTen, .imdbRatingPlugin span.votes
-{color: #fff; margin: 0;}
-
 @media only screen and (max-width:719px)
 {
 #cover,#cover::after{width: 30%; background: none;}
