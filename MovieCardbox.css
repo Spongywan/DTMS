@@ -66,6 +66,7 @@ header.post-header, article.post .post-header{display:none}
     max-height: 214px;
     left: 0px;
     position: relative;
+    margin: 0;
     width: 20%;
     z-index: 1;
 }
