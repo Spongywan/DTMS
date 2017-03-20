@@ -1,0 +1,52 @@
+<div id="back-cover">
+<img class="background" src="//res.cloudinary.com/spongywan/image/upload/c_scale,h_311,w_728/v1486269826/dory01-1170x658.jpg" style="opacity: 1;">
+ <div id="movie-box">
+<div id="title-box">
+<h1 id="movie-title">Finding Dory (2016)</h1>
+  </div>
+  <div id="movie-info-box">
+<ul id="movie-info">
+     <li id="cover">
+       <img src="https://extraimage.net/images/2016/10/26/23c1f9f9c97389061ac65cecf9e0ce6d.jpg" id="poster" style="opacity: 1;">
+     </li>
+      <li id="info-spec">
+<span title="Actors"><i class="fa fa-user-o"></i>  Ellen DeGeneres, Albert Brooks, Ed O'Neill</span><br>
+<span title="Directors"><i class="fa fa-bullhorn"></i> Andrew Stanton, Angus MacLane</span><br>
+<span title="Writers"><i class="fa fa-pencil"></i> Andrew Stanton, Victoria Strouse</span><br>
+<span title="Release date"><i class="fa fa-calendar"></i> Released June, 2016</span>
+<span></span>
+      </li>
+      <li id="chart-bo" title="Opening Weekend Rank">
+        <strong id="chart-bo-rank"><i class="fa fa-line-chart"></i> #1</strong><center><span id="meta-info">Opening Weekend</span></center>
+      </li>
+      <li id="imdb" title="IMDb Rating">
+        <strong id="imdb-rating"><i class="fa fa-imdb"></i></strong><center><span id="meta-info" class="imdbRatingPlugin imdbRatingStyle3" data-style="p3" data-title="tt2277860" data-user="ur71781997"><span class="rating">7.4<span class="ofTen">/10</span></span><span class="votes">144,935 votes</span></span></center>
+      </li>
+      <li id="studio" title="Studio">
+       <i class="fa fa-copyright"></i><strong id="studio-name">Pixar</strong>Buena Vista</li>
+      <li id="genre" title="Genre">
+       <i class="fa fa-star"></i><strong id="details">A<span id="small-details">NIMATION</span></strong>Adventure, Comedy</li>
+      <li id="budget" title="Budget &amp; Teather">
+       <i class="fa fa-dollar"></i><strong id="details">$200<span id="small-details"> Million</span></strong>4,305 theaters</li>
+      <li id="mpaa-rating" title="MPAA Rating">
+       <i class="fa fa-eye"></i><strong id="details">PG</strong>Parents Guide</li>
+     </ul>
+    </div>
+  <div id="movie-meta-des">
+     <ul id="movie-meta-des-list">
+<li id="movie-meta-des-list-by">
+       <b id="movie-meta-des-info"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></b>
+      </li>
+      <li id="movie-meta-des-list-by">
+       <b id="movie-meta-des-info"><i class="fa fa-desktop"></i> 720p</b></li>
+      <li id="movie-meta-des-list-by">
+       <b id="movie-meta-des-info"><i class="fa fa-tv"></i> 1080p</b></li>
+<li id="movie-meta-des-list-by">
+       <b id="movie-meta-des-info"><i class="fa fa-clock-o"></i> 1h 37min</b></li>
+      <li id="movie-meta-des-list-by">
+       <b id="movie-meta-des-info"><i class="fa fa-film"></i> BluRay</b></li>
+     <br>
+     </ul>
+    </div>
+ </div>
+</div>
