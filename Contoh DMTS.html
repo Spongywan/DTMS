@@ -2,12 +2,296 @@
 <html>
 <head>
 <title>Download Area | Non Animated Movies</title>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css" />
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?kit=WH0ZNRlwgjqqdX19pWBSJY4p3Ohgr6twJdHLAmO14_g" rel="stylesheet" type="text/css" />
 </head>
 <body>
+<style>
+#back-cover {
+    height: auto;
+    position: relative;
+    width: auto;
+    max-width: 728px;
+    font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
+}
+
+#back-cover:after {
+    bottom: 0px;
+    content: '';
+    height: auto;
+    left: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: auto;
+}
+
+#back-cover .background {
+    position: absolute;
+    margin:0;
+}
+
+#movie-box {
+    height: auto;
+    width: auto;
+}
+
+#title-box {
+    height: auto;
+    position: relative;
+    width: auto;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.0941176) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.498039);
+    font: 300 28px/47px Oswald,Arial,sans-serif;
+    overflow: hidden;
+}
+
+#movie-title {
+    color: rgb(255, 255, 255);
+    float: left;
+    height: 45px;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 2px;
+    width: auto;
+    margin: -2px 0px 0px;
+    padding: 0 10px;
+    font: 300 28px/47px Oswald,Arial,sans-serif
+}
+
+#movie-info-box {
+    height: auto;
+    position: relative;
+    width: auto;
+}
+
+#cover {
+    float: left;
+    height: auto;
+    max-height: 214px;
+    left: 0px;
+    position: relative;
+    margin: 0;
+    width: 20%;
+    z-index: 1;
+}
+
+#cover:after {
+    content: '';
+    height: 100%;
+    left: 100%;
+    top: 0;
+    position: absolute;
+    right: -225px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(255, 255, 255) 0%, rgb(252, 254, 255) 2%, rgba(125, 185, 232, 0) 100%) repeat scroll 0% 0% / auto padding-box border-box;
+}
+
+#poster {
+    color: rgb(75, 60, 35);
+    height: auto;
+    max-height: 218px;
+    width: 100%;
+}
+
+#movie-info {
+    float: left;
+    height: auto;
+    width: auto;
+    font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#info-spec {
+    display: block;
+    color: rgb(0, 0, 0);
+    float: left;
+    height: auto;
+    position: relative;
+    text-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0px;
+    min-width: 40%;
+    z-index: 1;
+    font: normal normal 300 normal 15px / 24px Oswald, Arial, sans-serif;
+    margin: 5px 0px 0;
+    padding: 0px 0 0 10px;
+}
+#chart-bo {
+    display: block;
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    text-shadow: rgba(255, 255, 255, 0.4) 1px 1px 0px;
+    width: 20%;
+    z-index: 1;
+    border-left: 1px solid rgba(255, 255, 255, 0.498039);
+    margin: 5px 0px 12px;
+}
+
+#chart-bo-rank {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: block;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
+    padding: 20px 0px 0px;
+}
+#imdb {
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    text-shadow: rgba(0,0,0, 0.4) 1px 1px 0px;
+    width: 20%;
+    z-index: 1;
+    border-left: 1px solid rgba(255, 255, 255, 0.498039);
+    list-style: none outside none;
+    margin: 5px 0px 12px;
+}
+
+#imdb-rating {
+    display: block;
+    text-align: center;
+    padding: 20px 0px 0px;
+    font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif
+}
+
+
+#meta-info {
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 1px;
+    text-transform: uppercase;
+    font:normal normal normal normal 15px / normal Oswald, Arial, sans-serif
+}
+
+#studio {
+    float: left;
+    position: relative;
+    width: 20%;
+    z-index: 1;
+    font: normal normal normal normal 14px / normal Oswald, Arial, sans-serif;
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+    border-left: 1px solid rgb(254, 254, 254);
+}
+
+#studio-name {
+    text-shadow: rgba(255,255,255, 0.4) 1px 1px 0px;
+    display: block;
+    font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
+    list-style: none outside none;
+    padding: 17px 0 0;
+}
+
+#genre {
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+    width: 20%;
+    z-index: 1;
+    border-left: 1px solid rgb(204, 204, 204);
+    font: normal normal normal normal 14px / normal Oswald, Arial, sans-serif;
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+}
+
+#details {
+    display: block;
+    width: auto;
+    font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
+    padding: 17px 0 0;
+}
+
+#small-details {
+    font: normal normal normal normal 21px / normal Oswald, Arial, sans-serif;
+}
+
+#budget {
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    width: 20%;
+    z-index: 1;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+    border-left: 1px solid rgb(204, 204, 204);
+    font: normal normal normal normal 14px / normal Oswald, Arial, sans-serif;
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+}
+
+#mpaa-rating {
+    color: rgb(255, 255, 255);
+    float: left;
+    position: relative;
+    text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+    width: 20%;
+    z-index: 1;
+    border-left: 1px solid rgb(204, 204, 204);
+    font: normal normal normal normal 14px / normal Oswald, Arial, sans-serif;
+    list-style: none outside none;
+    margin: 5px 0px 0px;
+    padding: 0px 10px;
+}
+
+#movie-meta-des {
+    height: auto;
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    background: rgba(0, 0, 0, 0.0941176) none repeat scroll 0% 0% / auto padding-box border-box;
+    border-top: 1px solid rgba(150, 150, 150, 0.498039);
+    overflow: hidden;
+}
+
+#movie-meta-des-list {
+    list-style: none outside none;
+    margin: 0px;
+    padding: 0px;
+}
+#movie-meta-des-list-by {
+    float: right;
+    position: relative;
+    z-index: 10;
+}
+#movie-meta-des-info {
+color: rgb(255, 255, 255);
+text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;
+display: block;
+text-align: center;
+text-transform: uppercase;
+width: 144px;
+font: normal normal normal normal 14px / 44px Oswald, Arial, sans-serif;
+padding: 0px 10px;}
+
+@media only screen and (max-width:719px)
+{
+#cover,#cover::after{width: 30%; background: none;}
+#poster{max-height: 190px}
+#studio,#studio-name,#info-spec{background-color: none; color:#fff; text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 0px;}
+#chart-bo,#imdb{width: 33%;}
+#studio,#genre,#budget,#mpaa-rating{width: 25%; padding: 0px; text-align: center}
+#studio-name,#details{text-align: center;}
+#movie-meta-des-list-by,#movie-meta-des-info{min-width:90px;width:20%;}
+}
+
+@media only screen and (max-width:466px)
+{
+#poster{max-height: 171px}
+#studio,#genre,#budget,#mpaa-rating{width:50%;}
+#studio-name,#details{padding: 0;}
+#chart-bo-rank,#imdb-rating {padding:0;height: auto;text-align: center;}
+}
+@media only screen and (min-width:220px) and (max-width:349px)
+{
+#cover{width: 25%;}
+#info-spec{padding-bottom: 40px;}
+#chart-bo,#imdb{width: 50%;}
+}
+</style>
 <div id="back-cover">
 <img class="background" src="//res.cloudinary.com/spongywan/image/upload/c_scale,h_311,w_728/v1486269826/dory01-1170x658.jpg" style="opacity: 1;">
  <div id="movie-box">
@@ -60,5 +344,5 @@
     </div>
  </div>
 </div>
- </body>
+</body>
 </html>
