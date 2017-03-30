@@ -4,7 +4,7 @@
     position: relative;
     max-width: 825px;
     font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
-    margin: 0;
+    margin: 0 -25px;
 }
 
 #back-cover:after {
