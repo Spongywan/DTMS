@@ -80,6 +80,7 @@
 }
 
 #poster {
+    display: block;
     color: rgb(75, 60, 35);
     height: auto;
     max-height: 218px;
