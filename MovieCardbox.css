@@ -260,7 +260,7 @@ width: 144px;
 font: normal normal normal normal 14px / 44px Oswald, Arial, sans-serif;
 padding: 0px 10px;}
 
-@media only screen and (max-width:719px)
+@media only screen and (max-width:775px)
 {
 #cover,#cover::after{width: 30%; background: none;}
 #poster{max-height: 190px}
