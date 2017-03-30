@@ -3,9 +3,9 @@
     height: auto;
     position: relative;
     width: auto;
-    max-width: 728px;
+    width: 100%;
     font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
-    margin: -45px -20px 10px -20px;
+    margin: 0 0 10px -20px;
 }
 
 #back-cover:after {
