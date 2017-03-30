@@ -171,6 +171,7 @@
 
 #studio-name {
     text-shadow: rgba(255,255,255, 0.4) 1px 1px 0px;
+    color: #000;
     display: block;
     font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
     list-style: none outside none;
