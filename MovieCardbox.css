@@ -5,7 +5,7 @@
     width: auto;
     width: 100%;
     font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
-    margin: 0 0 10px -20px;
+    margin: 0;
 }
 
 #back-cover:after {
@@ -30,7 +30,7 @@
 }
 
 #title-box {
-    height: auto;
+    height: 100%;
     position: relative;
     width: auto;
     z-index: 5;
