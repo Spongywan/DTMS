@@ -2,7 +2,7 @@
 #back-cover {
     height: auto;
     position: relative;
-    max-width: 775px;
+    max-width: 825px;
     font: normal normal normal normal 16px / 24px Arimo, Arial, sans-serif;
     margin: 0;
 }
@@ -261,7 +261,7 @@ width: 155px;
 font: normal normal normal normal 14px / 44px Oswald, Arial, sans-serif;
 padding: 0px 10px;}
 
-@media only screen and (max-width:774px)
+@media only screen and (max-width:824px)
 {
 #cover,#cover::after{width: 30%; background: none;}
 #poster{max-height: 190px}
