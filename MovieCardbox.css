@@ -57,6 +57,7 @@
 }
 
 #cover {
+    display: block;
     float: left;
     height: auto;
     max-height: 214px;
