@@ -42,7 +42,6 @@
 #movie-title {
     color: rgb(255, 255, 255);
     float: left;
-    height: 45px;
     text-shadow: rgba(0, 0, 0, 0.4) 1px 1px 2px;
     width: auto;
     margin: -2px 0px 0px;
@@ -83,7 +82,7 @@
     display: block;
     color: rgb(75, 60, 35);
     height: auto;
-    max-height: 218px;
+    max-height: 215px;
     width: 100%;
 }
 
