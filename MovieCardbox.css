@@ -160,7 +160,7 @@
 #studio {
     float: left;
     position: relative;
-    color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
     width: 20%;
     z-index: 1;
     font: normal normal normal normal 14px / normal Oswald, Arial, sans-serif;
