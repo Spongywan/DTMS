@@ -175,7 +175,7 @@
     text-shadow: rgba(255,255,255, 0.4) 1px 1px 0px;
     font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
     list-style: none outside none;
-    padding: 17px 0 0;
+    padding: 15px 0 0;
 }
 
 #genre {
@@ -196,7 +196,7 @@
     display: block;
     width: auto;
     font: normal normal normal normal 26px / normal Oswald, Arial, sans-serif;
-    padding: 17px 0 0;
+    padding: 15px 0 0;
 }
 
 #small-details {
